@@ -1,0 +1,19 @@
+---
+import {MdTabs} from "@material/web/tabs/tabs";
+---
+
+<MdTabs auto-activate client:load>
+  <slot/>
+</MdTabs>
+
+<script is:inline>
+  const mdTabs = document.querySelectorAll('md-tabs')
+  mdTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const href = tab.activeTab.getAttribute('data-href')
+      if (!href) return
+      if (location.href == href) return
+      location.href = href
+    })
+  })
+</script>

@@ -1,0 +1,23 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+import {MdFilledCard} from "@material/web/labs/card/filled-card";
+import type {CollectionEntry} from 'astro:content';
+
+type Post = CollectionEntry<'post'>
+
+interface Props {
+  post: Post
+}
+
+const {post, ...props} = Astro.props
+---
+
+<a href={`/blog/${post.slug}/`}>
+  <MdFilledCard class="p-5">
+    <img src={post.data.heroImage} alt=""/>
+    <h4 class="title">{post.data.title}</h4>
+    <p class="date">
+      <FormattedDate date={post.data.pubDate}/>
+    </p>
+  </MdFilledCard>
+</a>
