@@ -3,7 +3,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import lit from "@astrojs/lit";
 import vue from "@astrojs/vue";
-import cloudflare from "@astrojs/cloudflare";
+import netlify from "@astrojs/netlify";
 
 import tailwind from "@astrojs/tailwind";
 
@@ -22,8 +22,5 @@ export default defineConfig({
     }
   },
   prefetch: true,
-  adapter: cloudflare({
-    mode: 'directory',
-    functionPerRoute: true
-  })
+  adapter: netlify()
 });
