@@ -3,9 +3,10 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import lit from "@astrojs/lit";
 import vue from "@astrojs/vue";
-import netlify from "@astrojs/netlify";
-
+// import netlify from "@astrojs/netlify";
 import tailwind from "@astrojs/tailwind";
+
+import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,5 +23,5 @@ export default defineConfig({
     }
   },
   prefetch: true,
-  adapter: netlify()
+  adapter: cloudflare()
 });

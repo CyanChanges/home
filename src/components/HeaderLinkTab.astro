@@ -1,0 +1,21 @@
+---
+import {ALinkedTab} from "./ALinkedTab";
+
+const {to, class: className, ...props} = Astro.props;
+
+const {pathname} = Astro.url;
+const isActive = to === pathname || to === pathname.replace(/\/$/, '');
+---
+
+<ALinkedTab class="js-only" data-a-tab client:load {to} active={isActive}>
+  <slot/>
+</ALinkedTab>
+
+<style>
+  a-tab {
+    width: 100%;
+  }
+</style>
+
+<script>
+</script>

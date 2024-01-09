@@ -4,6 +4,9 @@
     "strictNullChecks": true,
     "jsx": "preserve",
     "verbatimModuleSyntax": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "allowJs": true,
     "plugins": [
       {
         "name": "@astrojs/ts-plugin"
