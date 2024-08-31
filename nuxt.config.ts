@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       '@nuxt/image',
     ],
     nitro: {
-        preset: hyphenate(process.env.SERVER_PRESET ?? 'vercel_edge'),
+        preset: hyphenate(process.env.SERVER_PRESET ?? 'netlify_edge'),
     },
     primevue: {
         options: {
