@@ -4,17 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/src/components/ALinkedTab.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/HeaderLinkTab.astro" afterDir="false" />
+    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="chore: fix">
+      <change afterPath="$PROJECT_DIR$/src/components/BlogPost.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HeaderInner.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/404.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/inner/blog.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/inner/main.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrangler.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/releases/yarn-4.0.2.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarnrc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ALinkedTab.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BaseHead.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseHead.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderTab.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderTabs.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderTabs.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderLinkTab.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderTabs.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/blog/test.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/BlogPost.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog/[...slug].astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/[...slug].astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +48,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="SOFT" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/node_modules/@material/web/tabs/internal/primary-tab.d.ts" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/node_modules/@material/web/tabs/primary-tab.d.ts" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/node_modules/@material/web/tabs/tabs.d.ts" root0="SKIP_INSPECTION" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -51,33 +71,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "javascript.nodejs.core.library.configured.version": "21.5.0",
-    "javascript.nodejs.core.library.typings.version": "20.10.6",
-    "last_opened_file_path": "/home/cyan/WebstormProjects/home/node_modules/@astrojs/language-server",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "yarn",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "settings.vue",
-    "ts.external.directory.path": "/home/cyan/WebstormProjects/home/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.6.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.3.0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/sdcard/Projects/WebstormProjects/home&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/sdcard/Projects/WebstormProjects/home/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/pages/docs" />
       <recent name="$PROJECT_DIR$/content" />
       <recent name="$PROJECT_DIR$" />
@@ -94,6 +116,13 @@
       <envs />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-WS-242.20224.342" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -120,7 +149,21 @@
       <workItem from="1704601967179" duration="1464000" />
       <workItem from="1704603434536" duration="22354000" />
       <workItem from="1704761041798" duration="17163000" />
-      <workItem from="1704807939764" duration="3290000" />
+      <workItem from="1704807939764" duration="3548000" />
+      <workItem from="1704857640685" duration="1563000" />
+      <workItem from="1704859577539" duration="466000" />
+      <workItem from="1704878603111" duration="30000" />
+      <workItem from="1705642453771" duration="2803000" />
+      <workItem from="1721969957665" duration="60000" />
+      <workItem from="1723701091364" duration="1256000" />
+      <workItem from="1723953461351" duration="179000" />
+      <workItem from="1723953650320" duration="378000" />
+      <workItem from="1723955342813" duration="3269000" />
+      <workItem from="1724327223135" duration="2527000" />
+      <workItem from="1724331444552" duration="1572000" />
+      <workItem from="1724333037033" duration="5911000" />
+      <workItem from="1724372958067" duration="25000" />
+      <workItem from="1725074626999" duration="1637000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update state">
       <option name="closed" value="true" />
@@ -202,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704639463667</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix: HeaderLinkTab">
+      <option name="closed" value="true" />
+      <created>1704812632836</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704812632836</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,22 +281,7 @@
     <MESSAGE value="chore: migrate to yarn v4" />
     <MESSAGE value="fix" />
     <MESSAGE value="build: temporary remove type checks" />
-    <option name="LAST_COMMIT_MESSAGE" value="build: temporary remove type checks" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/node_modules/astro/dist/core/render/result.js</url>
-          <line>63</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/node_modules/astro/dist/core/render/result.js</url>
-          <line>69</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="chore: fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: fix" />
   </component>
 </project>

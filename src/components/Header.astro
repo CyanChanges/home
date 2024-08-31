@@ -1,9 +1,6 @@
 ---
-import HeaderTabs from './HeaderTabs.astro'
-import HeaderLinkTab from "./HeaderLinkTab.astro";
+import {HeaderInner} from './HeaderInner'
 ---
 
-<HeaderTabs>
-  <HeaderLinkTab to="/">Hello</HeaderLinkTab>
-  <HeaderLinkTab to="/blog">Blog</HeaderLinkTab>
-</HeaderTabs>
+<HeaderInner page={Astro.url.pathname} client:only="lit"></HeaderInner>
+

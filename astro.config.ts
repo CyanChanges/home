@@ -22,6 +22,5 @@ export default defineConfig({
       entrypoint: "astro/assets/services/sharp"
     }
   },
-  prefetch: true,
-  adapter: cloudflare()
+  prefetch: true
 });

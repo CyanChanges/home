@@ -2,35 +2,37 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import {MdFilledCard} from "@material/web/labs/card/filled-card";
+import "@material/web/labs/card/filled-card";
 
-import {SITE_TITLE, SITE_DESCRIPTION} from '../consts';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
 <html lang="en">
 <head>
-  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
-  <style>
-    .hello-card {
-      display: block;
-      height: 10em;
-    }
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
+    <style>
+        .hello-card {
+            display: block;
+            height: 10em;
+        }
 
-    h1 {
-      font-size: 24px;
-    }
-  </style>
+        h1 {
+            font-size: 24px;
+        }
+    </style>
 </head>
 <body>
 <Header title={SITE_TITLE}/>
-<MdFilledCard class="hello-card m-3">
-  <div class="w-full h-full flex">
-    <h1 class="m-auto w-fit h-fit">
-      Hello World!
-    </h1>
-  </div>
-</MdFilledCard>
+<main id="main">
+    <mdui-card class="hello-card m-3">
+        <div class="w-full h-full flex">
+            <h1 class="m-auto w-fit h-fit">
+                Hello World!
+            </h1>
+        </div>
+    </mdui-card>
+</main>
 <Footer/>
 </body>
 </html>

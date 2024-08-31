@@ -1,0 +1,6 @@
+name = "home"
+compatibility_date = "2023-12-18"
+main = './dist/_worker.js'
+
+[site]
+bucket = './dist'

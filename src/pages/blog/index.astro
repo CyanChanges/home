@@ -6,6 +6,7 @@ import BlogCard from '../../components/BlogCard.astro'
 import {SITE_TITLE, SITE_DESCRIPTION} from '../../consts';
 import {getCollection} from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
+import BlogInner from '../inner/blog.astro'
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
@@ -27,18 +28,8 @@ const posts = (await getCollection('blog')).sort(
 </head>
 <body>
 <Header/>
-<main>
-  <section>
-    <ul class="posts">
-      {
-        posts.map((post) => (
-          <li class="p-3 post">
-            <BlogCard post={post}/>
-          </li>
-        ))
-      }
-    </ul>
-  </section>
+<main id="main">
+  <BlogInner/>
 </main>
 <Footer/>
 </body>
