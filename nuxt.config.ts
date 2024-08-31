@@ -1,3 +1,4 @@
+import {hyphenate} from 'cosmokit'
 import Aura from '@primevue/themes/aura';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -17,6 +18,9 @@ export default defineNuxtConfig({
       '@nuxtjs/sitemap',
       '@nuxt/image',
     ],
+    nitro: {
+        preset: hyphenate(process.env.SERVER_PRESET ?? 'vercel_edge'),
+    },
     primevue: {
         options: {
             theme: {
