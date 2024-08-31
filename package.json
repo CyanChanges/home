@@ -24,13 +24,14 @@
     "@vueuse/nuxt": "^11.0.3",
     "nuxt": "^3.13.0",
     "nuxt-viewport": "^2.1.5",
+    "nuxt-lodash": "^2.5.3",
     "primeicons": "^7.0.0",
     "primevue": "^4.0.5",
+    "vite": "^5.4.2",
     "vue": "latest"
   },
   "devDependencies": {
     "@primevue/nuxt-module": "^4.0.5",
-    "nuxt-lodash": "^2.5.3",
     "sass": "^1.77.8",
     "sass-embedded": "^1.77.8"
   }
