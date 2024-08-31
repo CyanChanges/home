@@ -7,10 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="chore: defaults to netlify&#10;feat: automatic prefetch">
+    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="chore: update deps">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,17 +105,16 @@
     "git-widget-placeholder": "main",
     "javascript.nodejs.core.library.configured.version": "22.6.0",
     "javascript.nodejs.core.library.typings.version": "22.3.0",
-    "last_opened_file_path": "/usr/bin/bun",
+    "last_opened_file_path": "/sdcard/Projects/WebstormProjects/home",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/usr/bin/bun",
-    "nodejs_package_manager_path": "/usr/bin/bun",
-    "npm.dev -o.executor": "Run",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "yarn",
     "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "settings.nodejs",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "ts.external.directory.path": "/home/cyan/.local/share/JetBrains/Toolbox/apps/webstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -194,7 +194,7 @@
       <workItem from="1725103873184" duration="108000" />
       <workItem from="1725103988366" duration="16000" />
       <workItem from="1725104018322" duration="364000" />
-      <workItem from="1725104387620" duration="9473000" />
+      <workItem from="1725104387620" duration="7100000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update state">
       <option name="closed" value="true" />
@@ -308,23 +308,7 @@
       <option name="project" value="LOCAL" />
       <updated>1725108058297</updated>
     </task>
-    <task id="LOCAL-00015" summary="chore: update deps">
-      <option name="closed" value="true" />
-      <created>1725111951148</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1725111951148</updated>
-    </task>
-    <task id="LOCAL-00016" summary="chore: migrate to vercel">
-      <option name="closed" value="true" />
-      <created>1725112376132</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1725112376133</updated>
-    </task>
-    <option name="localTasksCounter" value="17" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,8 +351,6 @@
     <MESSAGE value="chore: update" />
     <MESSAGE value="chore: initial" />
     <MESSAGE value="chore: update deps" />
-    <MESSAGE value="chore: migrate to vercel" />
-    <MESSAGE value="chore: defaults to netlify&#10;feat: automatic prefetch" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: defaults to netlify&#10;feat: automatic prefetch" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update deps" />
   </component>
 </project>
