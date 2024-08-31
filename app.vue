@@ -1,0 +1,75 @@
+<script setup lang="ts">
+import IconField from 'primevue/iconfield';
+import InputIcon from 'primevue/inputicon';
+import type { MenuItem } from "primevue/menuitem";
+import { PrimeIcons } from '@primevue/core/api';
+import { useTrimEnd } from "#imports";
+
+let router = useRouter()
+
+let items: MenuItem[] = [
+  {
+    label: "Home",
+    icon: PrimeIcons.HOME,
+    route: "/",
+    disabled: (...args) => {
+      return useTrimEnd(router.currentRoute.value.path, "/") == ""
+    },
+  },
+  {
+    label: "Blogs",
+    icon: PrimeIcons.LIST,
+    route: "/blog",
+    disabled: (...args) => {
+      return useTrimEnd(router.currentRoute.value.path, "/") == "/blog"
+    },
+  }
+]
+</script>
+
+<template>
+  <Menubar :model="items" class="menubar">
+    <template #item="{ item, props, hasSubmenu, root }">
+      <router-link class="flex items-center" v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
+        <a v-ripple :href="href" v-bind="props.action" @click="navigate">
+          <span :class="item.icon"/>
+          <span class="ml-2">{{ item.label }}</span>
+          <Badge v-if="item.badge" :class="{ 'ml-auto': !root, 'ml-2': root }" :value="item.badge"/>
+          <span v-if="item.shortcut"
+                class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1">{{
+              item.shortcut
+            }}</span>
+          <i v-if="hasSubmenu"
+             :class="['pi pi-angle-down', { 'pi-angle-down ml-2': root, 'pi-angle-right ml-auto': !root }]"></i>
+        </a>
+      </router-link>
+      <a v-else v-ripple :href="item.url" :target="item.target" v-bind="props.action">
+        <span :class="item.icon"/>
+        <span class="ml-2">{{ item.label }}</span>
+        <Badge v-if="item.badge" :class="{ 'ml-auto': !root, 'ml-2': root }" :value="item.badge"/>
+        <span v-if="item.shortcut"
+              class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1">{{
+            item.shortcut
+          }}</span>
+        <i v-if="hasSubmenu"
+           :class="['pi pi-angle-down', { 'pi-angle-down ml-2': root, 'pi-angle-right ml-auto': !root }]"></i>
+      </a>
+    </template>
+    <template #end>
+      <div class="flex items-center gap-2">
+        <IconField>
+          <InputIcon class="pi pi-search"/>
+          <InputText disabled placeholder="Search" type="text" class="w-32 sm:w-auto"/>
+        </IconField>
+      </div>
+    </template>
+  </Menubar>
+  <NuxtRouteAnnouncer/>
+  <NuxtPage/>
+</template>
+
+<style scoped>
+.menubar {
+  margin-bottom: 0.5rem;
+}
+</style>
