@@ -16,7 +16,6 @@ export default defineNuxtConfig({
       'nuxt-viewport',
       '@nuxtjs/sitemap',
       '@nuxt/image',
-      '@nuxthub/core',
     ],
     primevue: {
         options: {
