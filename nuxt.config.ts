@@ -17,7 +17,13 @@ export default defineNuxtConfig({
       'nuxt-viewport',
       '@nuxtjs/sitemap',
       '@nuxt/image',
+      '@nuxtjs/color-mode',
+      '@unocss/nuxt',
     ],
+    tailwindcss: {
+        exposeConfig: true,
+        viewer: true,
+    },
     nitro: {
         preset: hyphenate(process.env.SERVER_PRESET ?? 'netlify_edge'),
     },
@@ -25,11 +31,15 @@ export default defineNuxtConfig({
         options: {
             theme: {
                 preset: Aura
-            }
-        }
+            },
+            ripple: true,
+        },
     },
     site: {
         url: 'https://www.cyans.me',
         name: "Cyan Home"
+    },
+    unocss: {
+        nuxtLayers: true,
     },
 })
