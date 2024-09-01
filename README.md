@@ -8,7 +8,7 @@ Try access any of following:
 
 | Defaults | Cloudflare(Netlify) | Netlify | GitHubPages |  
 | -------- | ------------------- | ------- | ----------- |
-| [cyans.me](https://cyans.me) | [www](https://www.cyans.me/) | [netlify.home](https://netlify.home.cyans.me/) | [ghpages.home](http://ghpages.home.cyans.me/) |
+| [cyans.me](https://cyans.me) | [www](https://www.cyans.me/) | [netlify.home](https://netlify.home.cyans.me/) | [ghpages.home](https://ghpages.home.cyans.me/) |
 
 ## Build
 ### Clone the repository
