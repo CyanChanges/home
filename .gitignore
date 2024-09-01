@@ -1,3 +1,7 @@
+# Keys
+deploy
+deploy.pub
+
 # Nuxt dev/build outputs
 .output
 .data

@@ -7,7 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="chore: defaults to netlify&#10;feat: automatic prefetch" />
+    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="build: auto deploy">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/sync.sh" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/sync.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +23,7 @@
         <option value="SCSS File" />
         <option value="Vue Composition API Component" />
         <option value="TypeScript File" />
+        <option value="workflow" />
       </list>
     </option>
   </component>
@@ -61,7 +65,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1725124928" />
+                    <option name="lastUsedInstant" value="1725186551" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="mian" />
+                    <option name="lastUsedInstant" value="1725186533" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="deploy" />
@@ -331,7 +339,55 @@
       <option name="project" value="LOCAL" />
       <updated>1725112376133</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="build: auto deploy">
+      <option name="closed" value="true" />
+      <created>1725189407189</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1725189407190</updated>
+    </task>
+    <task id="LOCAL-00018" summary="build: auto deploy">
+      <option name="closed" value="true" />
+      <created>1725189435555</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1725189435555</updated>
+    </task>
+    <task id="LOCAL-00019" summary="build: auto deploy">
+      <option name="closed" value="true" />
+      <created>1725189697705</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1725189697705</updated>
+    </task>
+    <task id="LOCAL-00020" summary="build: auto deploy">
+      <option name="closed" value="true" />
+      <created>1725189780591</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1725189780591</updated>
+    </task>
+    <task id="LOCAL-00021" summary="build: auto deploy">
+      <option name="closed" value="true" />
+      <created>1725189899242</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1725189899242</updated>
+    </task>
+    <task id="LOCAL-00022" summary="build: auto deploy">
+      <option name="closed" value="true" />
+      <created>1725189976810</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1725189976810</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +404,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="deploy" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -372,11 +428,13 @@
     <MESSAGE value="build: temporary remove type checks" />
     <MESSAGE value="chore: fix" />
     <MESSAGE value="chore: update" />
-    <MESSAGE value="chore: initial" />
     <MESSAGE value="chore: update deps" />
     <MESSAGE value="chore: migrate to vercel" />
     <MESSAGE value="chore: defaults to netlify&#10;feat: automatic prefetch" />
     <MESSAGE value="chore: add unocss&#10;feat: add footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: add unocss&#10;feat: add footer" />
+    <MESSAGE value="chore: initial" />
+    <MESSAGE value="perf: optimize&#10;feat: add Google Analyze&#10;chore: optimize&#10;feat: add social links" />
+    <MESSAGE value="build: auto deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="build: auto deploy" />
   </component>
 </project>
