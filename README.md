@@ -39,3 +39,10 @@ We use Bun for both JavaScript Runtime and Package Runtime.
 ```shell
 bun run build
 ```
+
+### Cloudflare Pages Preview(wrangler)
+A build is required before doing this.
+```shell
+bunx wrangler pages dev dist/
+```
+
