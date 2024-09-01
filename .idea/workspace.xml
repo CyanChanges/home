@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AngularSettings">
+    <option name="innerServiceType" value="AUTO" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="chore: defaults to netlify&#10;feat: automatic prefetch" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Astro Component" />
+        <option value="SCSS File" />
+        <option value="Vue Composition API Component" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="941ddcbe25709817e414ee4bca6e7f88e8a28504" />
+    <option name="OPTIONS">
+      <set>
+        <option value="INTERACTIVE" />
+      </set>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="deploy" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="chore: update deps" />
+        <option name="rewordedMessage" value="chore: defaults to netlify&#10;feat: automatic prefetch&#10;chore: update deps" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="941ddcbe25709817e414ee4bca6e7f88e8a28504" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1725124928" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="deploy" />
+                    <option name="lastUsedInstant" value="1725104711" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/node_modules/@material/web/tabs/internal/primary-tab.d.ts" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/node_modules/@material/web/tabs/primary-tab.d.ts" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/node_modules/@material/web/tabs/tabs.d.ts" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2aOX6MRFpUS100PTeSUW5kp0tvV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.6.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.3.0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/usr/bin/bun&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/usr/bin/bun&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;/usr/bin/bun&quot;,
+    &quot;npm.dev -o.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/cyan/.local/share/JetBrains/Toolbox/apps/webstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$/pages/blog" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/pages/docs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev -o" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <arguments value="-o" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="" />
+      <created>1700228066054</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700228066054</updated>
+      <workItem from="1704190426581" duration="2453000" />
+      <workItem from="1704254795364" duration="4925000" />
+      <workItem from="1704291613292" duration="253000" />
+      <workItem from="1704376615219" duration="12000" />
+      <workItem from="1704376719358" duration="5154000" />
+      <workItem from="1704381886832" duration="1503000" />
+      <workItem from="1704460214143" duration="3583000" />
+      <workItem from="1704518732566" duration="2342000" />
+      <workItem from="1704552759770" duration="599000" />
+      <workItem from="1704598081833" duration="2943000" />
+      <workItem from="1704601702995" duration="10000" />
+      <workItem from="1704601765386" duration="89000" />
+      <workItem from="1704601861832" duration="60000" />
+      <workItem from="1704601924061" duration="33000" />
+      <workItem from="1704601967179" duration="1464000" />
+      <workItem from="1704603434536" duration="22354000" />
+      <workItem from="1704761041798" duration="17163000" />
+      <workItem from="1704807939764" duration="3548000" />
+      <workItem from="1704857640685" duration="1563000" />
+      <workItem from="1704859577539" duration="466000" />
+      <workItem from="1704878603111" duration="30000" />
+      <workItem from="1705642453771" duration="2803000" />
+      <workItem from="1721969957665" duration="60000" />
+      <workItem from="1723701091364" duration="1256000" />
+      <workItem from="1723953461351" duration="179000" />
+      <workItem from="1723953650320" duration="378000" />
+      <workItem from="1723955342813" duration="3269000" />
+      <workItem from="1724327223135" duration="2527000" />
+      <workItem from="1724331444552" duration="1572000" />
+      <workItem from="1724333037033" duration="5911000" />
+      <workItem from="1724372958067" duration="25000" />
+      <workItem from="1725074626999" duration="18796000" />
+      <workItem from="1725103657716" duration="189000" />
+      <workItem from="1725103873184" duration="108000" />
+      <workItem from="1725103988366" duration="16000" />
+      <workItem from="1725104018322" duration="364000" />
+      <workItem from="1725104387620" duration="9473000" />
+      <workItem from="1725124079485" duration="621000" />
+      <workItem from="1725171449646" duration="12765000" />
+    </task>
+    <task id="LOCAL-00001" summary="chore: update state">
+      <option name="closed" value="true" />
+      <created>1704291822254</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704291822254</updated>
+    </task>
+    <task id="LOCAL-00002" summary="chore: update">
+      <option name="closed" value="true" />
+      <created>1704381909504</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704381909504</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore: update(test propose)">
+      <option name="closed" value="true" />
+      <created>1704382110653</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704382110653</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore: update(test propose)">
+      <option name="closed" value="true" />
+      <created>1704382115561</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704382115561</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore: drop Nuxt.js, switch to Astro">
+      <option name="closed" value="true" />
+      <created>1704638507365</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704638507365</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore: update yarn lock">
+      <option name="closed" value="true" />
+      <created>1704638795291</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704638795291</updated>
+    </task>
+    <task id="LOCAL-00007" summary="chore: update yarn lock">
+      <option name="closed" value="true" />
+      <created>1704638801476</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704638801476</updated>
+    </task>
+    <task id="LOCAL-00008" summary="chore: migrate to yarn v4 (stage2)">
+      <option name="closed" value="true" />
+      <created>1704639215502</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704639215502</updated>
+    </task>
+    <task id="LOCAL-00009" summary="chore: migrate to yarn v4">
+      <option name="closed" value="true" />
+      <created>1704639240316</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704639240316</updated>
+    </task>
+    <task id="LOCAL-00010" summary="build: temporary remove type checks">
+      <option name="closed" value="true" />
+      <created>1704639463667</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704639463667</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix: HeaderLinkTab">
+      <option name="closed" value="true" />
+      <created>1704812632836</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704812632836</updated>
+    </task>
+    <task id="LOCAL-00012" summary="chore: update">
+      <option name="closed" value="true" />
+      <created>1725076352521</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1725076352521</updated>
+    </task>
+    <task id="LOCAL-00013" summary="chore: initial">
+      <option name="closed" value="true" />
+      <created>1725104619511</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1725104619511</updated>
+    </task>
+    <task id="LOCAL-00014" summary="chore: update deps">
+      <option name="closed" value="true" />
+      <created>1725108058297</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1725108058297</updated>
+    </task>
+    <task id="LOCAL-00015" summary="chore: update deps">
+      <option name="closed" value="true" />
+      <created>1725111951148</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1725111951148</updated>
+    </task>
+    <task id="LOCAL-00016" summary="chore: migrate to vercel">
+      <option name="closed" value="true" />
+      <created>1725112376132</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1725112376133</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="deploy" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: update state" />
+    <MESSAGE value="chore: update(testing propose)" />
+    <MESSAGE value="chore: update(test propose)" />
+    <MESSAGE value="chore: drop Nuxt.js, switch to Astro" />
+    <MESSAGE value="chore: update yarn lock" />
+    <MESSAGE value="chore: migrate to yarn v4 (stage2)" />
+    <MESSAGE value="chore: migrate to yarn v4" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="build: temporary remove type checks" />
+    <MESSAGE value="chore: fix" />
+    <MESSAGE value="chore: update" />
+    <MESSAGE value="chore: initial" />
+    <MESSAGE value="chore: update deps" />
+    <MESSAGE value="chore: migrate to vercel" />
+    <MESSAGE value="chore: defaults to netlify&#10;feat: automatic prefetch" />
+    <MESSAGE value="chore: add unocss&#10;feat: add footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: add unocss&#10;feat: add footer" />
+  </component>
+</project>
