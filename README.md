@@ -22,7 +22,7 @@ cd cyans-home
 ```
 
 ### Install
-We use Bun for both JavaScript Runtime and Package Runtime.
+We use Bun for both JavaScript Runtime and Package Manager.
 
 ```shell
 bun install
@@ -35,7 +35,7 @@ bun run dev -o
 ```
 
 ### Build
-We use Bun for both JavaScript Runtime and Package Runtime.
+We use Bun for both JavaScript Runtime and Package Manager.
 ```shell
 bun run build
 ```
