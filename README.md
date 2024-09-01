@@ -6,10 +6,6 @@ Built with Bun + Nuxt + PrimeVue
 
 Try access any of following:
 
-> [!NOTE]
-> HTTPS for GitHub Pages didn't work for unknown reason.
->
-
 | Defaults | Cloudflare(Netlify) | Netlify | GitHubPages |  
 | -------- | ------------------- | ------- | ----------- |
 | [cyans.me](https://cyans.me) | [www](https://www.cyans.me/) | [netlify.home](https://netlify.home.cyans.me/) | [ghpages.home](http://ghpages.home.cyans.me/) |
