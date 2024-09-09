@@ -8,7 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="build: auto deploy">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/sync.sh" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/sync.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CNAME" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -210,6 +210,7 @@
       <workItem from="1725104387620" duration="9473000" />
       <workItem from="1725124079485" duration="621000" />
       <workItem from="1725171449646" duration="12765000" />
+      <workItem from="1725614226520" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update state">
       <option name="closed" value="true" />
