@@ -1,4 +1,5 @@
 # Cyan Home
+[![Sync](https://github.com/CyanChanges/home/actions/workflows/sync.yml/badge.svg)](https://github.com/CyanChanges/home/actions/workflows/sync.yml)  
 Built with Bun + Nuxt + PrimeVue
 
 
