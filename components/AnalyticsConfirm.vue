@@ -2,7 +2,7 @@
 
 const store = useAnalytics()
 
-let cfWAnalytics = ref(store.cfExist)
+let cfWAnalytics = ref(store.cloudflareWAnalytics)
 let msClarity = ref(store.clarity)
 let gAnalytic = ref(store.googleAnalytics)
 
