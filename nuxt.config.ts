@@ -25,23 +25,28 @@ export default defineNuxtConfig({
         '@nuxt/image',
         '@nuxtjs/color-mode',
         '@unocss/nuxt',
-        'nuxt-gtag',
         // 'nuxt-booster'
+        '@pinia/nuxt',
+        'pinia-plugin-persistedstate',
+        '@formkit/auto-animate/nuxt'
     ],
+    i18n: {
+        vueI18n: "./i18n.config.ts"
+    },
+    pinia: {
+        storesDirs: ['./stores/**'],
+    },
     googleFonts: {
         preload: true,
         base64: true,
         families: {
             "Noto+Sans": {
-                wght: '300...1000'
+                wght: '200..900'
             },
             "Noto+Sans+SC": {
-                wght: '300...1000'
+                wght: '200..900'
             },
         }
-    },
-    gtag: {
-        id: "G-RM7DGVGTFJ"
     },
     nitro: {
         preset: hyphenate(process.env.SERVER_PRESET ?? 'netlify_edge'),
@@ -49,7 +54,8 @@ export default defineNuxtConfig({
     primevue: {
         options: {
             theme: {
-                preset: Aura
+                preset: Aura,
+
             },
             ripple: true,
         },

@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="build: auto deploy">
-      <change afterPath="$PROJECT_DIR$/CNAME" afterDir="false" />
+    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="fix: not patching">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stores/analytics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stores/analytics.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +21,9 @@
       <list>
         <option value="Astro Component" />
         <option value="SCSS File" />
+        <option value="workflow" />
         <option value="Vue Composition API Component" />
         <option value="TypeScript File" />
-        <option value="workflow" />
       </list>
     </option>
   </component>
@@ -44,6 +44,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="SOFT" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;CyanChanges&quot;
+  }
+}</component>
   <component name="GitRewordedCommitMessages">
     <option name="commitMessagesMapping">
       <RewordedCommitMessageMapping>
@@ -84,6 +90,12 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/CyanChanges/home&quot;,
+    &quot;accountId&quot;: &quot;06572b74-ac6c-44e9-8e93-32556780b6e3&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/node_modules/@material/web/tabs/internal/primary-tab.d.ts" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/node_modules/@material/web/tabs/primary-tab.d.ts" root0="SKIP_INSPECTION" />
@@ -97,7 +109,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -107,36 +119,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.6.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.3.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/usr/bin/bun&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;/usr/bin/bun&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;/usr/bin/bun&quot;,
-    &quot;npm.dev -o.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/cyan/.local/share/JetBrains/Toolbox/apps/webstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "22.6.0",
+    "javascript.nodejs.core.library.typings.version": "22.3.0",
+    "last_opened_file_path": "/usr/bin/bun",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "/usr/bin/bun",
+    "nodejs_package_manager_path": "/usr/bin/bun",
+    "npm.dev -o.executor": "Run",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "settings.javascript.linters.tslint",
+    "ts.external.directory.path": "/home/cyan/.local/share/JetBrains/Toolbox/apps/webstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -162,6 +175,13 @@
       <envs />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b86d7ee83eed-JavaScript-WS-243.19420.26" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -211,6 +231,11 @@
       <workItem from="1725124079485" duration="621000" />
       <workItem from="1725171449646" duration="12765000" />
       <workItem from="1725614226520" duration="17000" />
+      <workItem from="1725889088763" duration="1511000" />
+      <workItem from="1726047933030" duration="147000" />
+      <workItem from="1729567903673" duration="9466000" />
+      <workItem from="1729577379557" duration="5204000" />
+      <workItem from="1729586427238" duration="18776000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update state">
       <option name="closed" value="true" />
@@ -388,7 +413,47 @@
       <option name="project" value="LOCAL" />
       <updated>1725189976810</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="fix: content overflow caused by styles">
+      <option name="closed" value="true" />
+      <created>1725889249748</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1725889249748</updated>
+    </task>
+    <task id="LOCAL-00024" summary="docs: add Privacy Policy, and note&#10;feat: add Microsoft Clarity, Manual Cloudflare Web Analytics&#10;chore: adjust Google Analytics load&#10;feat: allow choose analytics&#10;fix: invalid robots.txt format&#10;chore: bump dependencies versions">
+      <option name="closed" value="true" />
+      <created>1729602192690</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1729602192690</updated>
+    </task>
+    <task id="LOCAL-00025" summary="chore: fix GitHub Pages auto deploy">
+      <option name="closed" value="true" />
+      <created>1729602695428</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1729602695428</updated>
+    </task>
+    <task id="LOCAL-00026" summary="chore: update dependencies">
+      <option name="closed" value="true" />
+      <created>1729603327535</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1729603327535</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fix: not patching">
+      <option name="closed" value="true" />
+      <created>1729609591771</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1729609591771</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,6 +501,12 @@
     <MESSAGE value="chore: initial" />
     <MESSAGE value="perf: optimize&#10;feat: add Google Analyze&#10;chore: optimize&#10;feat: add social links" />
     <MESSAGE value="build: auto deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="build: auto deploy" />
+    <MESSAGE value="docs(readme): fix" />
+    <MESSAGE value="fix: content overflow caused by styles" />
+    <MESSAGE value="docs: add Privacy Policy, and note&#10;feat: add Microsoft Clarity, Manual Cloudflare Web Analytics&#10;chore: adjust Google Analytics load&#10;feat: allow choose analytics&#10;fix: invalid robots.txt format&#10;chore: bump dependencies versions" />
+    <MESSAGE value="chore: fix GitHub Pages auto deploy" />
+    <MESSAGE value="chore: update dependencies" />
+    <MESSAGE value="fix: not patching" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: not patching" />
   </component>
 </project>

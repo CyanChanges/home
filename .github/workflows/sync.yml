@@ -35,5 +35,5 @@ jobs:
           # https://github.com/peaceiris/actions-gh-pages/issues/163
           exclude_assets: ''
           force_orphan: true
-          commit_message: '[skip ci] deploy'
+          commit_message: 'deploy'
 

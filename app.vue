@@ -7,6 +7,7 @@
     <NuxtPage/>
   </main>
   <AppFooter/>
+  <Toast />
 </template>
 
 <style scoped>

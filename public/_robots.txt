@@ -1,2 +1,4 @@
-Agent: *
+User-Agent: *
 Allow: *
+
+Sitemap: https://www.cyans.me/sitemap.xml
