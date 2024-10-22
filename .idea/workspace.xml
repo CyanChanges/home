@@ -7,9 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="fix: not patching">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stores/analytics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stores/analytics.ts" afterDir="false" />
+    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="fix: ~~write rust too much~~ cloudflare detector not working">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +234,7 @@
       <workItem from="1726047933030" duration="147000" />
       <workItem from="1729567903673" duration="9466000" />
       <workItem from="1729577379557" duration="5204000" />
-      <workItem from="1729586427238" duration="18776000" />
+      <workItem from="1729586427238" duration="19082000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update state">
       <option name="closed" value="true" />
@@ -453,7 +452,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729609591771</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fix: ~~write rust too much~~ cloudflare detector not working">
+      <option name="closed" value="true" />
+      <created>1729610963920</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1729610963920</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,6 +514,7 @@
     <MESSAGE value="chore: fix GitHub Pages auto deploy" />
     <MESSAGE value="chore: update dependencies" />
     <MESSAGE value="fix: not patching" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: not patching" />
+    <MESSAGE value="fix: ~~write rust too much~~ cloudflare detector not working" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: ~~write rust too much~~ cloudflare detector not working" />
   </component>
 </project>
