@@ -7,8 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="chore: switch use Bun in GitHub Pages build process">
+    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="chore: enable cloudflare by default">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/AnalyticsConfirm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/AnalyticsConfirm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/AppHeader.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +236,7 @@
       <workItem from="1726047933030" duration="147000" />
       <workItem from="1729567903673" duration="9466000" />
       <workItem from="1729577379557" duration="5204000" />
-      <workItem from="1729586427238" duration="20462000" />
+      <workItem from="1729586427238" duration="21792000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update state">
       <option name="closed" value="true" />
@@ -468,7 +470,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729611295179</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="chore: enable cloudflare by default">
+      <option name="closed" value="true" />
+      <created>1729612603551</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1729612603551</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +508,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore: update(testing propose)" />
     <MESSAGE value="chore: update(test propose)" />
     <MESSAGE value="chore: drop Nuxt.js, switch to Astro" />
     <MESSAGE value="chore: update yarn lock" />
@@ -523,6 +532,7 @@
     <MESSAGE value="fix: not patching" />
     <MESSAGE value="fix: ~~write rust too much~~ cloudflare detector not working" />
     <MESSAGE value="chore: switch use Bun in GitHub Pages build process" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: switch use Bun in GitHub Pages build process" />
+    <MESSAGE value="chore: enable cloudflare by default" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: enable cloudflare by default" />
   </component>
 </project>

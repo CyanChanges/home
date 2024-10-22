@@ -6,7 +6,7 @@ let cfWAnalytics = ref(store.cloudflareWAnalytics)
 let msClarity = ref(store.clarity)
 let gAnalytic = ref(store.googleAnalytics)
 
-let tooltip = computed(() => store.cfExist ? "Enforced by Cloudflare" : undefined)
+let tooltip = computed(() => store.cfExist ? "Managed by Cloudflare" : undefined)
 
 function configure() {
   store.$patch({

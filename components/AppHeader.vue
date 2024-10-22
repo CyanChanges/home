@@ -27,6 +27,29 @@ let items: MenuItem[] = [
 
 let [analytic] = useAutoAnimate()
 let store = useAnalytics()
+
+import { ref } from "vue";
+
+const menu = ref();
+const menuItems = ref<MenuItem[]>([
+  {
+    label: 'Options',
+    items: [
+      {
+        label: 'Review analytics options',
+        icon: PrimeIcons.BOOK,
+        command: () => {
+          store.confirmedVersion = null
+        }
+      },
+    ]
+  }
+]);
+
+const toggle = (event: Event) => {
+  menu.value.toggle(event);
+};
+
 </script>
 
 <template>
@@ -60,6 +83,12 @@ let store = useAnalytics()
           <i v-if="hasSubmenu"
              :class="['pi pi-angle-down', { 'pi-angle-down ml-2': root, 'pi-angle-right ml-auto': !root }]"></i>
         </a>
+      </template>
+      <template #end>
+        <div class="card flex justify-center">
+          <Button type="button" severity="secondary" icon="pi pi-ellipsis-v" @click="toggle" aria-haspopup="true" aria-controls="overlay_menu" />
+          <Menu ref="menu" id="overlay_menu" :model="menuItems" :popup="true" />
+        </div>
       </template>
     </Menubar>
     <ClientOnly>
