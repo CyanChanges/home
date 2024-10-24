@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-updateTime: 2024-10-22T13:00:00.00+08:00
+updateTime: 2024-10-24T13:00:00.00+08:00
 ---
 <b>
 When you use our services, 
@@ -33,8 +33,8 @@ will not be directly associated with you personally.
 Cloudflare Web Analytics is a privacy-first web analytics service.
 You can read their privacy policy https://www.cloudflare.com/privacypolicy/.
 
-If you're visiting our website through Cloudflare,
-Cloudflare enforces this to be enabled. 
+This option is managed by Cloudflare.
+You can't disable this option if you’re visiting through Cloudflare.
 
 When you visit our website with option enabled or through Cloudflare,  
 the following is collected:
@@ -84,7 +84,7 @@ visit https://privacy.microsoft.com/privacystatement.
 
 You should read [Microsoft Private Policy](https://privacy.microsoft.com/privacystatement).
 
-Microsoft Clarity is currently disabled by default,
+Microsoft Clarity is currently enabled by default,
 but you can enable this **explicitly**.
 
 The following is collected:

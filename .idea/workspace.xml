@@ -7,10 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="chore: enable cloudflare by default">
+    <list default="true" id="1867beba-f353-4667-ad6e-530d518ed087" name="Changes" comment="chore: change privacy policy&#10;chore: seo optimize&#10;chore: enable clarity by default&#10;fix: try serialize function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AnalyticsConfirm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/AnalyticsConfirm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/AppHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/privacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/privacy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blog/[...slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/[...slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/privacy.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/privacy.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stores/analytics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stores/analytics.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,37 +124,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.6.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.3.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/usr/bin/bun&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;/usr/bin/bun&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;/usr/bin/bun&quot;,
-    &quot;npm.dev -o.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.tslint&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/cyan/.local/share/JetBrains/Toolbox/apps/webstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "22.6.0",
+    "javascript.nodejs.core.library.typings.version": "22.3.0",
+    "last_opened_file_path": "/usr/bin/bun",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "/usr/bin/bun",
+    "nodejs_package_manager_path": "/usr/bin/bun",
+    "npm.dev -o.executor": "Run",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "ts.external.directory.path": "/home/cyan/.local/share/JetBrains/Toolbox/apps/webstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -236,7 +240,14 @@
       <workItem from="1726047933030" duration="147000" />
       <workItem from="1729567903673" duration="9466000" />
       <workItem from="1729577379557" duration="5204000" />
-      <workItem from="1729586427238" duration="21792000" />
+      <workItem from="1729586427238" duration="22197000" />
+      <workItem from="1729697502625" duration="51000" />
+      <workItem from="1729698243145" duration="11000" />
+      <workItem from="1729700025411" duration="1000" />
+      <workItem from="1729700027782" duration="1000" />
+      <workItem from="1729746772745" duration="616000" />
+      <workItem from="1729770021183" duration="12000" />
+      <workItem from="1729772816299" duration="499000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update state">
       <option name="closed" value="true" />
@@ -478,7 +489,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729612603551</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="feat: allow review analytics options&#10;chore: enable cloudflare by default">
+      <option name="closed" value="true" />
+      <created>1729613943927</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1729613943927</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,9 +527,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore: update(test propose)" />
-    <MESSAGE value="chore: drop Nuxt.js, switch to Astro" />
-    <MESSAGE value="chore: update yarn lock" />
     <MESSAGE value="chore: migrate to yarn v4 (stage2)" />
     <MESSAGE value="chore: migrate to yarn v4" />
     <MESSAGE value="fix" />
@@ -533,6 +549,9 @@
     <MESSAGE value="fix: ~~write rust too much~~ cloudflare detector not working" />
     <MESSAGE value="chore: switch use Bun in GitHub Pages build process" />
     <MESSAGE value="chore: enable cloudflare by default" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: enable cloudflare by default" />
+    <MESSAGE value="feat: allow review analytics options&#10;chore: enable cloudflare by default" />
+    <MESSAGE value="chore: change privacy policy&#10;chore: enable clarity by default" />
+    <MESSAGE value="chore: change privacy policy&#10;chore: seo optimize&#10;chore: enable clarity by default&#10;fix: try serialize function" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: change privacy policy&#10;chore: seo optimize&#10;chore: enable clarity by default&#10;fix: try serialize function" />
   </component>
 </project>

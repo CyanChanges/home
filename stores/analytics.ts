@@ -36,7 +36,7 @@ export const useAnalytics = defineStore("analytics", () => {
 
     let cloudflareWAnalytics = ref(true)
     let googleAnalytics = ref(true)
-    let clarity = ref(false)
+    let clarity = ref(true)
 
     let _lastConfirm = ref(false)
     let isConfirmed = computedAsync(async () => {
@@ -146,7 +146,13 @@ export const useAnalytics = defineStore("analytics", () => {
     }
 }, {
     persist: {
-        omit: ["latestVersion", "isConfirmed"],
+        pick: [
+            "clarity",
+            "googleAnalytics",
+            "cloudflareWAnalytics",
+            "confirmedVersion",
+            "_lastConfirm"
+        ],
         beforeHydrate(ctx) {
             ctx.store.$subscribe(async (mutation, { isConfirmed }) => {
                 if (isConfirmed) ctx.store.load()

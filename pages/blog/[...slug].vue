@@ -4,6 +4,7 @@
 
 <template>
     <ContentDoc v-slot="{ doc }">
+      <Title>{{ doc.title }}</Title>
       <article>
         <Card>
           <template #title>{{ doc.title }}</template>
