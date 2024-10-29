@@ -1,14 +1,15 @@
 <script setup lang="ts">
-const { t } = useI18n()
 import type { MenuItem } from "primevue/menuitem";
 import { PrimeIcons } from '@primevue/core/api';
 import trimEnd from 'lodash.trimend'
+
+const { t } = useI18n()
 
 let router = useRouter()
 
 let items: MenuItem[] = [
   {
-    label: t("cyanHome"),
+    label: t("homePage"),
     icon: PrimeIcons.HOME,
     route: "/",
     disabled: () => {
@@ -36,7 +37,7 @@ const menuItems = ref<MenuItem[]>([
     label: 'Options',
     items: [
       {
-        label: 'Review analytics options',
+        label: t("review-analytic-options"),
         icon: PrimeIcons.BOOK,
         command: () => {
           store.confirmedVersion = null
@@ -57,7 +58,7 @@ const toggle = (event: Event) => {
     <NuxtRouteAnnouncer/>
     <Menubar :model="items" class="menubar">
       <template #item="{ item, props, hasSubmenu, root }">
-        <NuxtLink v-ripple v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
+        <NuxtLink prefetch v-ripple v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
           <div class="flex items-center">
             <a :href="href" v-bind="props.action" @click="navigate">
               <span :class="item.icon"/>
@@ -65,7 +66,7 @@ const toggle = (event: Event) => {
               <Badge v-if="item.badge" class="ml-auto" :value="item.badge"/>
               <span v-if="item.shortcut"
                     class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1">{{
-                  item.shortcut
+                  item.shortcut!
                 }}</span>
               <i v-if="hasSubmenu"
                  :class="['pi pi-angle-down', { 'pi-angle-down ml-2': root, 'pi-angle-right ml-auto': !root }]"></i>
@@ -86,8 +87,9 @@ const toggle = (event: Event) => {
       </template>
       <template #end>
         <div class="card flex justify-center">
-          <Button type="button" severity="secondary" icon="pi pi-ellipsis-v" @click="toggle" aria-haspopup="true" aria-controls="overlay_menu" />
-          <Menu ref="menu" id="overlay_menu" :model="menuItems" :popup="true" />
+          <Button type="button" severity="secondary" icon="pi pi-ellipsis-v" @click="toggle" aria-haspopup="true"
+                  aria-controls="overlay_menu"/>
+          <Menu ref="menu" id="overlay_menu" :model="menuItems" :popup="true"/>
         </div>
       </template>
     </Menubar>
@@ -102,3 +104,12 @@ const toggle = (event: Event) => {
   margin-bottom: 0.5rem;
 }
 </style>
+
+<i18n lang="yaml">
+en:
+  review-analytic-options: Review Analytic Options
+zh-Hans:
+  review-analytic-options: 查看分析选项
+zh-Hant:
+  review-analytic-options: 檢查分析選項
+</i18n>

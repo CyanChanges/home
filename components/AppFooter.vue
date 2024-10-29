@@ -6,9 +6,9 @@ const currentYear = new Date().getFullYear()
 <template>
   <div class="flex m-2rem mt-5rem">
     <div class="footer m-auto text-center w-a h-a font-700">
-      <span class="t-cyan">CyanChanges</span> &copy; {{ currentYear }}. {{ $t("allRightsReserved") }}.
+      <span class="t-cyan">CyanChanges</span> &copy; {{ currentYear }}. {{ t("allRightsReserved") }}
       <br><br>
-      <span class="">
+      <span select="none">
         <a v-tooltip="'CyanChanges'" href="https://github.com/CyanChanges">GitHub</a> |
         <a v-tooltip="'@cyanc:matrix.org'" href="https://matrix.to/@cyanc:matrix.org#/@cyanc:matrix.org">Matrix</a> |
         <a v-tooltip="'cyanchanges'" type="text" href="https://discord.gg/hp86wkWf">Discord</a> |
@@ -18,6 +18,7 @@ const currentYear = new Date().getFullYear()
       </span>
     </div>
   </div>
+  <div select="none" class="text-center"><NuxtLink to="/privacy#privacy-policy">{{ t('privacy-policy') }}</NuxtLink></div>
 </template>
 
 <style scoped>
@@ -28,3 +29,13 @@ const currentYear = new Date().getFullYear()
   font-weight: 1000;
 }
 </style>
+
+<i18n lang="yaml">
+en:
+  allRightsReserved: All rights reserved.
+zh-Hans:
+  allRightsReserved: 保留所有权利
+zh-Hant:
+  allRightsReserved: 版權所有
+
+</i18n>
