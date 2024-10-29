@@ -62,7 +62,12 @@ export default defineNuxtConfig({
     },
     site: {
         url: 'https://www.cyans.me',
-        name: "Cyan Home"
+        name: "Cyan Home",
+        description: "Cyan Home",
+        defaultLocale: "en",
+    },
+    sitemap: {
+        sitemaps: false
     },
     unocss: {
         nuxtLayers: true,
