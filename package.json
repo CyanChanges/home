@@ -28,6 +28,7 @@
     "@vueuse/nuxt": "^11.1.0",
     "inaba": "^1.1.1",
     "lodash.trimend": "^4.5.1",
+    "lodash.trimstart": "^4.5.1",
     "nuxt": "^3.13.2",
     "nuxt-booster": "^3.1.6",
     "nuxt-gtag": "^3.0.1",
@@ -43,6 +44,7 @@
   "devDependencies": {
     "@primevue/nuxt-module": "^4.1.1",
     "@types/lodash.trimend": "^4.5.9",
+    "@types/lodash.trimstart": "^4.5.9",
     "cosmokit": "^1.6.3",
     "sass": "^1.80.3",
     "sass-embedded": "^1.80.3",

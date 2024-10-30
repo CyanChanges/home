@@ -3,95 +3,23 @@ import Random from 'inaba'
 
 const { t } = useI18n()
 
-// const device = useDevice()
+const state = useStated()
 
-const weights = [
-  0.01,
-  0.60,
-  0.20,
-  0.08,
-  0.01,
-  0.10
-]
-
-const things = [
-  "Arknights",
-  "Genshin Impact",
-  "Zenless Zone Zero",
-  "Honkai Impact 3rd",
-  "Honkai : Star Rail",
-  "Phigros",
-  "Rizline",
-  "Paradigm : Reboot",
-  "Android 15 - Vanilla Ice Cream",
-  "the Honkai world",
-  "Hysteria.Network",
-]
-
-const greetings: [string, string[]][] = [
-  ["おはいぃ", ["ドクター"]],
-  ["Hello", [
-    ...things,
-    'World',
-    "the ONE in the shadow",
-  ]],
-  [t("hello"), things],
-  ["Do you know, ", [
-    "Arch Linux",
-    "MSVC",
-    "Clang",
-    "GCC",
-    "LLVM",
-    "GitHub",
-    "GitLab",
-    "C++",
-    "C#",
-    "Rust",
-    "Java",
-    "Kotlin",
-    "JavaScript",
-    "TypeScript",
-    "Google",
-    "Chromium",
-    "JavaScriptCore",
-    "Bun.sh",
-    "Node.js",
-    "V8",
-    "Kubernetes",
-    "Golang",
-    "GPT",
-    "Transformer",
-    "GAN",
-    "Fine tuning",
-    "AI",
-    "Neuro-sama",
-    "Filian",
-    "camman18",
-    "THE GREAT FIREWALL OF CHINA"
-  ]],
-  ["Doctor", ['Who?']],
-  ["Try", [
-    "Koishi.js",
-  ]]
-]
-
-function getGreeting() {
-  let pick = Random.weightedPick(Object.fromEntries(weights.entries()));
-  let greeting = greetings[+pick]
-  return {
-    greeting: greeting[0] ?? "Hello",
-    name: Random.pick(greeting[1]) ?? "World"
-  }
-}
-
-const { data } = await useAsyncData(async () => getGreeting())
-const { greeting, name } = toRaw(data.value) as { greeting: string, name: string }
+const { data } = await useAsyncData(async () => state.greeting)
+const greeting = toRaw(data.value)
 </script>
 
 <template>
   <Card>
     <template #content>
-      {{ greeting }} {{ name }}
+      {{ greeting }}
+      <h3>LSPosed Internal Test</h3>
+      <p>极其先进</p>
+      <p>遥遥领先</p>
+      <p>加密混淆</p>
+      <p>完全闭源</p>
+      <p>禁止分享</p>
+      <p>泄漏溯源</p>
     </template>
   </Card>
 </template>

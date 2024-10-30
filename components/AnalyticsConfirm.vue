@@ -104,7 +104,6 @@ en:
     By visiting our website, we collected some basic information such as your country and region, etc.
   analytic-details: >
     Read our {0} for more details.
-  options: Options
   i-have-read: >
     Click the {0} button below indicates that you have read and agree the @:privacy-policy.
 ja:
@@ -115,7 +114,6 @@ ja:
     当社のウェブサイトにアクセスすることで、リクエスト地域などの基本的な情報が収集されます。
   analytic-details: >
     詳細については、{0} をご覧ください。
-  options: オプション
   i-have-read: >
     下の「{0}」ボタンをクリックすると、@:privacy-policy を読んで同意したことを示します。
 zh-Hans:
@@ -126,7 +124,6 @@ zh-Hans:
     通过访问我们的网站，我们收集了一些基本信息，例如您的国家和地区等
   analytic-details:
     请阅读我们的 {0} 以了解详情
-  options: 选项
   i-have-read: >
     单击下方的 {0} 按钮代表您已阅读并同意我们的 @:privacy-policy
 
@@ -138,7 +135,6 @@ zh-Hant:
     透過訪問我們的網站，我們收集了一些基本信息，例如您的國家和地區等
   analytic-read: >
     欲了解更多信息，請閱讀 {0}
-  options: 選項
   i-have-read:
     點擊下方的 {0} 按鈕代表您已閱讀並同意我們的 @:privacy-policy
 

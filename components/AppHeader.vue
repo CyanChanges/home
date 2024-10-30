@@ -34,7 +34,7 @@ import { ref } from "vue";
 const menu = ref();
 const menuItems = ref<MenuItem[]>([
   {
-    label: 'Options',
+    label: t('options'),
     items: [
       {
         label: t("review-analytic-options"),

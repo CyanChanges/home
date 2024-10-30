@@ -40,6 +40,7 @@ export default defineNuxtConfig({
             { code: 'zh-TW', file: "zh-Hant.yaml" },
             { code: 'zh-Hans', language: 'zh-Hans-CN', file: "zh-Hans-CN.yaml" },
             { code: 'zh-Hant', language: 'zh-Hant', file: "zh-Hant.yaml" },
+            { code: 'ja', language: 'ja-JP', file: "ja-JP.yaml" },
         ],
         defaultLocale: 'en-US',
         detectBrowserLanguage: {
@@ -47,7 +48,7 @@ export default defineNuxtConfig({
             cookieKey: 'i18n_redirected',
             redirectOn: 'root' // recommended
         },
-        lazy: true,
+        // lazy: true,
         strategy: "no_prefix"
     },
     pinia: {
