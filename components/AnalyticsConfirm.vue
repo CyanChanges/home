@@ -21,12 +21,14 @@ export interface Service {
   name: string
   value: Ref<boolean>,
   disabled?: Ref<boolean>,
+  tooltip?: Ref<string>
 }
 
 const services = [{
   name: "Cloudflare Web Analytics",
   value: cfWAnalytics,
-  disabled: store.cfExist
+  disabled: computed(()=>store.cfExist),
+  tooltip
 }, {
   name: "Google Analytics",
   value: gAnalytic
@@ -75,11 +77,11 @@ function toggle(event: Event) {
       <li v-for="service in services" :key="service.name">
         <div border="solid rounded dark" p-2 m-2 flex="~ 1 col md:row" justify-between
              class="items-center md:items-center max-md:gap-1 gap-4"
-             v-tooltip="tooltip">
+             v-tooltip="service.tooltip?.value">
           <p>{{ service.name }}</p>
           <ToggleButton class="max-md:w-full w-a"
                         v-model="service.value.value"
-                        :disabled="service.disabled"
+                        :disabled="service.disabled?.value"
                         onIcon="pi pi-check"
                         offIcon="pi pi-times"
                         :onLabel="$t('yes')"
