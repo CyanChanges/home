@@ -7,3 +7,14 @@ no: No
 done: Done
 privacy-policy: Privacy Policy
 options: Options
+
+actions:
+  go-home: Go Home
+  go-back: Go Back
+
+messages:
+  content-not-found: Content Not Found
+  content-page:
+    not-found: The Content you are trying to connect cannot be accessed.
+titles:
+  not-found: Content Connection Failed

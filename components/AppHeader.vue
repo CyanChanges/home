@@ -2,6 +2,7 @@
 import type { MenuItem } from "primevue/menuitem";
 import { PrimeIcons } from '@primevue/core/api';
 import trimEnd from 'lodash.trimend'
+import { ref } from "vue";
 
 const { t } = useI18n()
 
@@ -28,8 +29,6 @@ let items: MenuItem[] = [
 
 let [analytic] = useAutoAnimate()
 let store = useAnalytics()
-
-import { ref } from "vue";
 
 const menu = ref();
 const menuItems = ref<MenuItem[]>([
@@ -94,7 +93,9 @@ const toggle = (event: Event) => {
       </template>
     </Menubar>
     <ClientOnly>
-      <AnalyticsConfirm ref="analytic" v-if="!store.isConfirmed"/>
+      <div :class="{'visible': !store.isConfirmed}" class="confirmation">
+        <AnalyticsConfirm ref="analytic"/>
+      </div>
     </ClientOnly>
   </header>
 </template>
@@ -102,6 +103,43 @@ const toggle = (event: Event) => {
 <style scoped>
 .menubar {
   margin-bottom: 0.5rem;
+}
+
+.confirmation.visible {
+  opacity: 100%;
+  max-height: 40em;
+  display: block;
+
+  transition: all 1s cubic-bezier(0.50, 0.75, 0.75, 0.25);
+  animation: Animate 1.2s cubic-bezier(0.50, 0.75, 0.75, 0.25) reverse;
+  animation-direction: reverse;
+}
+
+.confirmation {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+
+  transition: all 1s cubic-bezier(0.45, 0.45, 0.25, 1);
+  animation: Animate 0.8s cubic-bezier(0.45, 0.45, 0.25, 1);
+  animation-direction: normal;
+}
+
+@keyframes Animate {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  35% {
+    max-height: 5em;
+    opacity: 50%;
+  }
+
+  to {
+    max-height: 40em;
+    opacity: 100%;
+  }
 }
 </style>
 
