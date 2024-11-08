@@ -92,11 +92,11 @@ const toggle = (event: Event) => {
         </div>
       </template>
     </Menubar>
-    <ClientOnly>
       <div :class="{'visible': !store.isConfirmed}" class="confirmation">
-        <AnalyticsConfirm ref="analytic"/>
+        <ClientOnly>
+          <AnalyticsConfirm ref="analytic"/>
+        </ClientOnly>
       </div>
-    </ClientOnly>
   </header>
 </template>
 
