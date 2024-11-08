@@ -5,7 +5,51 @@ import Aura from '@primevue/themes/aura';
 export default defineNuxtConfig({
     compatibilityDate: '2024-04-03',
     devtools: { enabled: true },
+    vite: {
+        build: {
+            minify: true,
+            terserOptions: {
+                ecma: 2020,
+                compress: {
+                    arguments: true,
+                    keep_fargs: false,
+                    lhs_constants: true,
+                    passes: 3
+                }
+            }
+        },
+        $client: {
+            build: {
+                rollupOptions: {
+                    output: {
+                        manualChunks: {
+                            "vue-ext": ["vue-router", "vue-i18n", "pinia"],
+                            "primevue": [
+                                "primevue/tooltip",
+                                "primevue/card",
+                                "primevue/popover",
+                                "primevue/button",
+                                "primevue/config",
+                            ],
+                            "lodash-x": ["lodash.trimstart", "lodash.trimend"],
+                            "vue-x": ["vue", "@vue/shared"],
+                            "vue-rt": ["@vue/runtime-core", "@vue/runtime-dom"]
+                        }
+                    }
+                }
+            }
+        }
+    },
     $production: {
+        vite: {
+            build: {
+                terserOptions: {
+                    compress: {
+                        drop_console: true
+                    }
+                }
+            }
+        },
         routeRules: {
             "*": {
                 prerender: true
@@ -28,7 +72,6 @@ export default defineNuxtConfig({
       // 'nuxt-booster'
       '@pinia/nuxt',
       'pinia-plugin-persistedstate',
-      '@formkit/auto-animate/nuxt',
       '@nuxtjs/device',
     ],
     i18n: {
@@ -73,12 +116,16 @@ export default defineNuxtConfig({
         preset: hyphenate(process.env.SERVER_PRESET ?? 'netlify_edge'),
     },
     primevue: {
+        autoImport: true,
+        directives: {
+            include: ['Ripple', 'Tooltip']
+        },
         options: {
+            ripple: true,
             theme: {
                 preset: Aura,
 
             },
-            ripple: true,
         },
     },
     site: {

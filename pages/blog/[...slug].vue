@@ -1,8 +1,11 @@
 <script setup lang="ts">
-const event = useRequestEvent()
 
-if (event) {
-  setResponseStatus(event, 404)
+if (import.meta.server) {
+  const { path } = useRoute();
+
+  const event = useRequestEvent()
+
+  await queryContent().where({ _path: path }).findOne().catch(() => setResponseStatus(event!, 404));
 }
 
 function goBack() {

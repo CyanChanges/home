@@ -27,7 +27,6 @@ let items: MenuItem[] = [
   }
 ]
 
-let [analytic] = useAutoAnimate()
 let store = useAnalytics()
 
 const menu = ref();
@@ -94,7 +93,10 @@ const toggle = (event: Event) => {
     </Menubar>
       <div :class="{'visible': !store.isConfirmed}" class="confirmation">
         <ClientOnly>
-          <AnalyticsConfirm ref="analytic"/>
+          <AnalyticsConfirm/>
+          <template #fallback>
+            <!-- Render on client side -->
+          </template>
         </ClientOnly>
       </div>
   </header>
