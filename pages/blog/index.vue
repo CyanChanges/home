@@ -1,5 +1,8 @@
 <script setup lang="ts">
 // const route = useRoute()
+useSeoMeta({
+  robots: 'index, follow'
+})
 </script>
 
 <template>

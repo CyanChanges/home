@@ -1,5 +1,10 @@
 <script setup lang="ts">
 const { t } = useI18n()
+
+useSeoMeta({
+  robots: 'index, follow'
+})
+
 </script>
 
 <template>

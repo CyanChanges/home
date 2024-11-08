@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import Random from 'inaba'
+useSeoMeta({
+  robots: 'index, follow'
+})
 
 const { t } = useI18n()
 
