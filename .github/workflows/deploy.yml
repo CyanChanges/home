@@ -35,15 +35,8 @@ jobs:
             ${{ runner.os }}-nuxt-build-
       # Pick your own package manager and build script
       - run: bun install --locked
-      - name: Save Cache
-        uses: actions/cache/save@v4
-        with:
-          path: |
-            .nuxt
-            dist
-          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
       - name: Save Blackhole
-        uses: actions/cache/sa@v4
+        uses: actions/cache/save@v4
         with:
           path: |
             node_modules
