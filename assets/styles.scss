@@ -4,3 +4,23 @@
   font-family: "Noto Sans", sans-serif;
   font-weight: 500;
 }
+
+:root[lang^="en"] {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+
+:root[lang^="zh-TW"], :root[lang^="zh-Hant"] {
+  font-family: "Noto Sans TC", "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+
+:root[lang^="zh-CN"], :root[lang^="zh-Hans"] {
+  font-family: "Noto Sans SC", "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+
+:root[lang^="ja"] {
+  font-family: "Noto Sans JP", "Noto Sans", sans-serif;
+  font-weight: 500;
+}

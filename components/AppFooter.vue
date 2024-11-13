@@ -21,7 +21,7 @@ const { major, minor, commit } = useVersion()
   </div>
   <div select="none" class="text-center"><NuxtLink to="/privacy#privacy-policy">{{ t('privacy-policy') }}</NuxtLink></div>
   <br>
-  <div select-none class="version color-blue font-800 text-center">
+  <div select-none class="version color-emerald font-600 text-center">
     Build: {{ major }}-{{minor}}@<b>{{ commit.slice(0, 8) }}</b>
   </div>
 </template>

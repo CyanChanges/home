@@ -60,7 +60,6 @@ export default defineNuxtConfig({
     modules: [
       '@primevue/nuxt-module',
       '@nuxtjs/i18n',
-      '@nuxtjs/google-fonts',
       '@vite-pwa/nuxt',
       '@nuxt/content',
       '@nuxtjs/seo',
@@ -73,10 +72,11 @@ export default defineNuxtConfig({
       '@pinia/nuxt',
       'pinia-plugin-persistedstate',
       '@nuxtjs/device',
+      '@nuxt/fonts',
     ],
     version: {
         major: "a",
-        minor: 11
+        minor: 12
     },
     i18n: {
         langDir: "locales",
@@ -100,25 +100,6 @@ export default defineNuxtConfig({
     },
     pinia: {
         storesDirs: ['./stores/**'],
-    },
-    googleFonts: {
-        preload: true,
-        base64: true,
-        families: {
-            "Noto+Sans": {
-                wght: '400..600'
-            },
-            "Noto+Sans+SC": {
-                wght: '400..600'
-            },
-            "Noto+Sans+TC": {
-                wght: '400..600'
-            },
-            "Roboto": {
-                wght: '700',
-                text: "abcdefghijklmnopqrstuvwxyz1234567890"
-            }
-        }
     },
     nitro: {
         preset: hyphenate(process.env.SERVER_PRESET ?? 'netlify_edge'),
@@ -148,4 +129,9 @@ export default defineNuxtConfig({
     unocss: {
         nuxtLayers: true,
     },
+    fonts: {
+        defaults: {
+            weights: [400, 500, 600, 700]
+        }
+    }
 })
