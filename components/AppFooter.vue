@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const currentYear = new Date().getFullYear()
+const { major, minor, commit } = useVersion()
 </script>
 
 <template>
@@ -19,6 +20,10 @@ const currentYear = new Date().getFullYear()
     </div>
   </div>
   <div select="none" class="text-center"><NuxtLink to="/privacy#privacy-policy">{{ t('privacy-policy') }}</NuxtLink></div>
+  <br>
+  <div select-none class="version color-blue font-800 text-center">
+    Build: {{ major }}-{{minor}}@<b>{{ commit.slice(0, 8) }}</b>
+  </div>
 </template>
 
 <style scoped>
@@ -27,6 +32,9 @@ const currentYear = new Date().getFullYear()
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 1000;
+}
+.version {
+  font-family: Roboto, Noto Sans, sans-serif;
 }
 </style>
 

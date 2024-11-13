@@ -74,6 +74,10 @@ export default defineNuxtConfig({
       'pinia-plugin-persistedstate',
       '@nuxtjs/device',
     ],
+    version: {
+        major: "a",
+        minor: 11
+    },
     i18n: {
         langDir: "locales",
         vueI18n: "./i18n.config.ts",
@@ -110,6 +114,10 @@ export default defineNuxtConfig({
             "Noto+Sans+TC": {
                 wght: '400..600'
             },
+            "Roboto": {
+                wght: '700',
+                text: "abcdefghijklmnopqrstuvwxyz1234567890"
+            }
         }
     },
     nitro: {

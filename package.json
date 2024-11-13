@@ -37,6 +37,7 @@
     "pinia-plugin-persistedstate": "^4.1.1",
     "primeicons": "^7.0.0",
     "primevue": "^4.1.1",
+    "schemastery": "^3.14.6",
     "vite": "^5.4.9",
     "vue": "latest"
   },
@@ -45,6 +46,7 @@
     "@types/lodash.trimend": "^4.5.9",
     "@types/lodash.trimstart": "^4.5.9",
     "cosmokit": "^1.6.3",
+    "nitro": "^0.0.0",
     "sass": "^1.80.3",
     "sass-embedded": "^1.80.3",
     "terser": "^5.36.0",

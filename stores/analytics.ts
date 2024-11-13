@@ -4,8 +4,12 @@ import {} from 'pinia-plugin-persistedstate'
 import { computedAsync } from "@vueuse/core";
 
 declare global {
-    const clarity: any
-    const dataLayer: any[]
+    interface Window {
+        const
+        clarity: any
+        const
+        dataLayer: any[]
+    }
 }
 
 let expireDate = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
