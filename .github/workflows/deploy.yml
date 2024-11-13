@@ -48,12 +48,12 @@ jobs:
           path: |
             node_modules
           key: blackhole
-      - run: bun run build --preset github_pages
+      - run: bun run generate
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: build-output
-          path: ./.output/public
+          path: dist
   # Deployment job
   deploy:
     # Add a dependency to the build job
