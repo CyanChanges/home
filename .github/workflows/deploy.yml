@@ -54,7 +54,6 @@ jobs:
         with:
           name: build-output
           path: ./.output/public
-      - name: Upload artifact to GitHub Pages
   # Deployment job
   deploy:
     # Add a dependency to the build job
@@ -92,7 +91,6 @@ jobs:
       - uses: actions/deploy-pages@v4
         name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
       - name: Save to gh_pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
