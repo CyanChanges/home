@@ -36,6 +36,7 @@ jobs:
         with:
           name: build-output
           path: ./.output/public
+      - name: Upload artifact to GitHub Pages
   # Deployment job
   deploy:
     # Add a dependency to the build job
@@ -43,7 +44,7 @@ jobs:
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
       contents: write   # to deploy to gh_pages branch
-      # pages: write      # to deploy to Pages
+      pages: write      # to deploy to Pages
       id-token: write   # to verify the deployment originates from an appropriate source
     # Deploy to the github_pages environment
     environment:
@@ -58,7 +59,11 @@ jobs:
         with:
           name: build-output
           path: dist
-      - name: Deploy to gh_pages branch
+      - uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Save to gh_pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
