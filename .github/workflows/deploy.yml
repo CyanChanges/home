@@ -90,7 +90,7 @@ jobs:
         with:
           path: ./dist
       - uses: actions/deploy-pages@v4
-      - name: Deploy to GitHub Pages
+        name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
       - name: Save to gh_pages branch
