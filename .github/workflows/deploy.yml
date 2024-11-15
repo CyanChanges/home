@@ -24,15 +24,6 @@ jobs:
           path: |
             node_modules
           key: blackhole
-      - name: Restore cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            dist
-            .nuxt
-          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
-          restore-keys: |
-            ${{ runner.os }}-nuxt-build-
       # Pick your own package manager and build script
       - run: bun install --locked
       - name: Save Blackhole
