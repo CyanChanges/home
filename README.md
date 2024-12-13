@@ -1,5 +1,9 @@
 # Cyan Home
-[![Sync](https://github.com/CyanChanges/home/actions/workflows/sync.yml/badge.svg)](https://github.com/CyanChanges/home/actions/workflows/sync.yml)  
+[![Sync](https://github.com/CyanChanges/home/actions/workflows/sync.yml/badge.svg)](https://github.com/CyanChanges/home/actions/workflows/sync.yml) 
+[![Deploy](https://github.com/CyanChanges/home/actions/workflows/deploy.yml/badge.svg)](https://github.com/CyanChanges/home/actions/workflows/deploy.yml)  
+![Netlify](https://img.shields.io/netlify/0f0d5a7a-0760-4579-87d7-c47d1d832f1f) 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0f0d5a7a-0760-4579-87d7-c47d1d832f1f/deploy-status)](https://app.netlify.com/sites/cyan-home/deploys)  
+
 Built with Bun + Nuxt + PrimeVue
 
 
@@ -7,8 +11,8 @@ Built with Bun + Nuxt + PrimeVue
 
 Try access any of the following:
 
-| Defaults | Cloudflare(Netlify) | Netlify | GitHubPages |  
-| -------- | ------------------- | ------- | ----------- |
+| Defaults | Cloudflare(Netlify) | Netlify | GitHubPages❌ |  
+| -------- | ------------------- | ------- | ------------- |
 | [cyans.me](https://cyans.me) | [www](https://www.cyans.me/) | [netlify.home](https://netlify.home.cyans.me/) | [ghpages.home](https://ghpages.home.cyans.me/) |
 
 ## Build
