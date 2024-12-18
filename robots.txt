@@ -1,0 +1,5 @@
+# START nuxt-robots (indexable)
+User-agent: *
+
+Sitemap: https://www.cyans.me/sitemap.xml
+# END nuxt-robots

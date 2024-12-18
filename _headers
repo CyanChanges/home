@@ -1,0 +1,14 @@
+/_nuxt/builds/meta/*
+  cache-control: public, max-age=31536000, immutable
+/_nuxt/builds/*
+  cache-control: public, max-age=1, immutable
+/sitemap.xsl
+  Content-Type: application/xslt+xml
+/sitemap.xml
+  Content-Type: text/xml; charset=UTF-8
+  Cache-Control: public, max-age=600, must-revalidate
+  X-Sitemap-Prerendered: 2024-12-18T13:06:17.572Z
+/_fonts/*
+  cache-control: public, max-age=31536000, immutable
+/_nuxt/*
+  cache-control: public, max-age=31536000, immutable
