@@ -10,11 +10,11 @@ const { major, minor, commit } = useVersion()
       <span class="t-cyan">CyanChanges</span> &copy; {{ currentYear }}. {{ t("allRightsReserved") }}
       <br><br>
       <span select="none">
-        <a v-tooltip="'CyanChanges'" href="https://github.com/CyanChanges">GitHub</a> |
-        <a v-tooltip="'@cyanc:matrix.org'" href="https://matrix.to/@cyanc:matrix.org#/@cyanc:matrix.org">Matrix</a> |
-        <a v-tooltip="'cyanchanges'" type="text" href="https://discord.gg/hp86wkWf">Discord</a> |
-        <a v-tooltip="'CyanChanges@mastodon.social'" href="https://mastodon.social/@CyanChanges">Mastodon</a> |
-        <a v-tooltip="'ID: 298526251'" href="https://www.hoyolab.com/accountCenter/postList?id=298526251"
+        <a rel="me" v-tooltip="'CyanChanges'" href="https://github.com/CyanChanges">GitHub</a> |
+        <a rel="me" v-tooltip="'@cyanc:matrix.org'" href="https://matrix.to/@cyanc:matrix.org#/@cyanc:matrix.org">Matrix</a> |
+        <a rel="me" v-tooltip="'To reach me? Join My Server'" type="text" href="https://discord.gg/FVNJxDZqUD">Discord</a> |
+        <a rel="me" v-tooltip="'CyanChanges@mastodon.social'" href="https://mastodon.social/@CyanChanges">Mastodon</a> |
+        <a rel="external" v-tooltip="'ID: 298526251'" href="https://www.hoyolab.com/accountCenter/postList?id=298526251"
            class="color-dark-3"><del>HoYoLab</del></a>
       </span>
     </div>
