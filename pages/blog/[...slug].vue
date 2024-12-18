@@ -8,6 +8,13 @@ if (import.meta.server) {
   await queryContent().where({ _path: path }).findOne().catch(() => setResponseStatus(event!, 404));
 }
 
+useHead({
+  meta: [{
+    name: "fediverse:creator",
+    content: "@CyanChanges@mastodon.social"
+  }]
+})
+
 function goBack() {
   history.back()
 }
