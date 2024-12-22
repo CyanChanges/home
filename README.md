@@ -1,4 +1,8 @@
 # Cyan Home
+All rights reserved by Cyan Changes (c) 2024.
+You are not allowed to use any content of this repository in yours,
+unless you have explict authorization.
+
 [![Sync](https://github.com/CyanChanges/home/actions/workflows/sync.yml/badge.svg)](https://github.com/CyanChanges/home/actions/workflows/sync.yml) 
 [![Deploy](https://github.com/CyanChanges/home/actions/workflows/deploy.yml/badge.svg)](https://github.com/CyanChanges/home/actions/workflows/deploy.yml)  
 ![Netlify](https://img.shields.io/netlify/0f0d5a7a-0760-4579-87d7-c47d1d832f1f) 
@@ -42,11 +46,9 @@ bunx wrangler pages dev dist/
 ```
 
 ## Project license
-Copyright (c) 2024 Cyan Changes. 
-
-Follow [CC BY-NC-ND 4.0 License](https://creativecommons.org/licenses/by-nc-nd/4.0/) 
-for any non-code content.
-For any code content, 
+All rights reserved by Cyan Changes (c) 2024.
+You are not allowed to use any content of this repository in yours,
+unless you have explict authorization.
 unless otherwise stated, all rights are reserved.
 
 
