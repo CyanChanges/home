@@ -1,0 +1,1 @@
+const a=()=>({legacy:!1,locale:"en",fallbackLocale:{"zh-TW":["zh-Hant"],"zh-CN":["zh-Hans"],"zh-Hant":["zh-Hant","zh-Hans"],"en-US":["en-US","en"],"ja-JP":["ja-JP","en"],default:["en"]}});export{a as default};
