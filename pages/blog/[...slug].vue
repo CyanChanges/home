@@ -29,7 +29,9 @@ function goBack() {
           <template #title>{{ doc.title }}</template>
           <template #subtitle>{{ doc.description }}</template>
           <template #content>
-            <ContentRenderer :value="doc"/>
+            <ContentRenderer :value="doc">
+
+            </ContentRenderer>
           </template>
         </Card>
       </article>

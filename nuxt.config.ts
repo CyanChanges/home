@@ -3,7 +3,7 @@ import Aura from '@primevue/themes/aura';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    compatibilityDate: '2024-04-03',
+    compatibilityDate: '2025-02-11',
     devtools: { enabled: true },
     app: {
         head: {
@@ -80,6 +80,7 @@ export default defineNuxtConfig({
       'pinia-plugin-persistedstate',
       '@nuxtjs/device',
       '@nuxt/fonts',
+      '@nuxt/icon'
     ],
     version: {
         major: "a",
@@ -135,6 +136,12 @@ export default defineNuxtConfig({
     },
     unocss: {
         nuxtLayers: true,
+    },
+    icon: {
+        size: '24px',
+        serverBundle: {
+            collections: ['fluent']
+        }
     },
     fonts: {
         defaults: {

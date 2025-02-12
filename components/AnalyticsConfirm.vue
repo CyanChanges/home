@@ -44,7 +44,11 @@ function toggle(event: Event) {
 </script>
 
 <template>
-  <Panel :header="t('data-collect')" select="none" severity="warn">
+  <Panel :pt="{
+    root: {
+      id: 'privacy'
+    }
+  }" :header="t('data-collect')" select="none" severity="warn">
     <div class="m-0">
       <p>{{ t("analytic-p1") }}</p>
       <p>{{ t("analytic-p2") }}</p>

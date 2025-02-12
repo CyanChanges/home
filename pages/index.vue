@@ -16,8 +16,8 @@ const greeting = toRaw(data.value)
     <template #content>
       {{ greeting }}
       <divider/>
-      {{ t("new-project-notice") }}
-      <NuxtLink href="/blog/new-project-in-2024">{{ t("new-project-title")}}</NuxtLink>
+      {{ t("koishi-registry-notice") }}
+      <NuxtLink to="/blog/koishi-registry-in-2024">{{ t("koishi-registry-link")}}</NuxtLink>
     </template>
   </Card>
 </template>
@@ -25,16 +25,16 @@ const greeting = toRaw(data.value)
 <i18n lang="yaml">
 en:
   hello: Hello
-  new-project-notice: Checkout the preview of my new project
-  new-project-title: Blog Post
+  koishi-registry-notice: Our Koishi Registry
+  koishi-registry-link: Open Post
 ja:
   hello: こんにちは、
 zhHans:
   hello: 你好
-  new-project-notice: "新项目预告:"
-  new-project-title: Blog Post
+  koishi-registry-notice: "Koishi Registry 的独立实现:"
+  koishi-registry-link: 打开文章
 zh-Hant:
   hello: 你好
-  new-project-notice: "新項目預告:"
-  new-project-title: Blog Post
+  koishi-registry-notice: "Koishi Registry 的獨立實現:"
+  koishi-registry-link: Blog Post
 </i18n>
