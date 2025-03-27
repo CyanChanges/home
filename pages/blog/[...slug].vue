@@ -1,58 +1,61 @@
 <script setup lang="ts">
+const { path } = useRoute();
 
-if (import.meta.server) {
-  const { path } = useRoute();
-
-  const event = useRequestEvent()
-
-  await queryContent().where({ _path: path }).findOne().catch(() => setResponseStatus(event!, 404));
-}
+const event = useRequestEvent();
+const page = await queryCollection("content")
+  .path(path)
+  .first()
+  .catch(() => {
+    if (event) setResponseStatus(event, 404);
+  });
 
 useHead({
-  meta: [{
-    name: "fediverse:creator",
-    content: "@CyanChanges@mastodon.social"
-  }]
-})
+  meta: [
+    {
+      name: "fediverse:creator",
+      content: "@CyanChanges@mastodon.social",
+    },
+  ],
+});
 
 function goBack() {
-  history.back()
+  history.back();
 }
 </script>
 
 <template>
-  <ContentDoc>
-    <template v-slot="{ doc }">
-      <Title>{{ doc.title }}</Title>
-      <article>
-        <Card>
-          <template #title>{{ doc.title }}</template>
-          <template #subtitle>{{ doc.description }}</template>
-          <template #content>
-            <ContentRenderer :value="doc">
-
-            </ContentRenderer>
-          </template>
-        </Card>
-      </article>
-    </template>
-    <template #not-found>
-      <Title>{{ $t("titles.not-found") }}</Title>
-      <Message class="message" mt-2 severity="warn">{{ $t("messages.content-not-found") }}</Message>
-      <Card class="card" select-none>
-        <template #subtitle>
-          <NuxtLink href="/">
-            <Chip v-ripple :label="$t('actions.go-home')"/>
-          </NuxtLink>&nbsp;
-          <Chip v-ripple :label="$t('actions.go-back')" @click="goBack()"/>
-          <divider/>
-        </template>
+  <div v-if="page">
+    <Title>{{ page.title }}</Title>
+    <article>
+      <Card class="content-card">
+        <template #title>{{ page.title }}</template>
+        <template #subtitle>{{ page.description }}</template>
         <template #content>
-          {{ $t("messages.content-page.not-found") }}
+          <span class="content-doc">
+            <ContentRenderer v-if="page" :value="page" />
+          </span>
         </template>
       </Card>
-    </template>
-    </ContentDoc>
+    </article>
+  </div>
+  <div v-else>
+    <Title>{{ $t("titles.not-found") }}</Title>
+    <Message class="message" mt-2 severity="warn">{{
+      $t("messages.content-not-found")
+    }}</Message>
+    <Card class="card" select-none>
+      <template #subtitle>
+        <NuxtLink href="/">
+          <Chip v-ripple :label="$t('actions.go-home')" /> </NuxtLink
+        >&nbsp;
+        <Chip v-ripple :label="$t('actions.go-back')" @click="goBack()" />
+        <divider />
+      </template>
+      <template #content>
+        {{ $t("messages.content-page.not-found") }}
+      </template>
+    </Card>
+  </div>
 </template>
 
 <style scoped>
@@ -65,4 +68,5 @@ function goBack() {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
 </style>

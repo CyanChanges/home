@@ -25,16 +25,16 @@ const greeting = toRaw(data.value)
 <i18n lang="yaml">
 en:
   hello: Hello
-  koishi-registry-notice: Our Koishi Registry
-  koishi-registry-link: Open Post
+  koishi-registry-notice: Our Koishi Registry!
+  koishi-registry-link: Blog Post
 ja:
   hello: こんにちは、
 zhHans:
   hello: 你好
-  koishi-registry-notice: "Koishi Registry 的独立实现:"
-  koishi-registry-link: 打开文章
+  koishi-registry-notice: "我们的 Koishi Registry 独立实现:"
+  koishi-registry-link: 查看文章
 zh-Hant:
   hello: 你好
-  koishi-registry-notice: "Koishi Registry 的獨立實現:"
+  koishi-registry-notice: "我們的 Koishi Registry 獨立實現:"
   koishi-registry-link: Blog Post
 </i18n>

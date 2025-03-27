@@ -1,4 +1,9 @@
-@import 'primeicons/primeicons.css';
+@use 'primeicons/primeicons.css';
+@use './doc.scss';
+
+body {
+  background-color: var(--p-surface-950);
+}
 
 :root {
   font-family: "Noto Sans", sans-serif;

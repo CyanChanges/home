@@ -1,5 +1,5 @@
 import { hyphenate } from 'cosmokit'
-import Aura from '@primevue/themes/aura';
+import Preset from './preset.config';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -68,10 +68,10 @@ export default defineNuxtConfig({
       '@primevue/nuxt-module',
       '@nuxtjs/i18n',
       '@vite-pwa/nuxt',
-      '@nuxt/content',
       '@nuxtjs/seo',
-      'nuxt-viewport',
       '@nuxtjs/sitemap',
+      '@nuxt/content',
+      'nuxt-viewport',
       '@nuxt/image',
       '@nuxtjs/color-mode',
       '@unocss/nuxt',
@@ -120,8 +120,7 @@ export default defineNuxtConfig({
         options: {
             ripple: true,
             theme: {
-                preset: Aura,
-
+                preset: Preset,
             },
         },
     },
@@ -142,6 +141,22 @@ export default defineNuxtConfig({
         serverBundle: {
             collections: ['fluent']
         }
+    },
+    content: {
+      build: {
+        markdown: {
+          highlight: {
+            theme: {
+              default: 'github-dark',
+              dark: 'github-dark',
+              light: 'github-light'
+            }
+          }
+        }
+      },
+      preview: {
+        api: 'https://api.nuxt.studio'
+      }
     },
     fonts: {
         defaults: {

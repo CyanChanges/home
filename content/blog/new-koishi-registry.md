@@ -1,6 +1,7 @@
 ---
 title: '新的 Koishi Registry'
 description: '专门自研了一个 Koishi Registry, 不会吞插件, 可轻松本地部署'
+updateDate: 2025-02-12T13:34:12.655Z
 ---
 
 ::card

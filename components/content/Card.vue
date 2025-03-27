@@ -5,7 +5,7 @@ import Card from 'primevue/card'
 <template>
 <Card class="card">
   <template #content>
-    <ContentSlot />
+    <slot />
   </template>
 </Card>
 </template>
