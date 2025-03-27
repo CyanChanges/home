@@ -74,6 +74,8 @@ if (import.meta.client) {
       <p>Gửi đến những ai đã gửi cho tôi email liên quan đến sòng bạc, tôi chúc các bạn thăng tiến nhanh chóng</p>
       <p>Όποιος μου στέλνει μηνύματα ηλεκτρονικού ταχυδρομείου σχετικά με το καζίνο, σας εύχομαι ταχεία άνοδο.</p>
 
+      <h3>谁给赌场发邮件抄送我, 我胸都给你打穿模</h3>
+
       <b>Translated by <a href="https://www.deepl.com/">DeepL</a></b>
       <br />
       <b><sub>Closable only after 5 seconds</sub></b>
