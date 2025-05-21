@@ -1,8 +1,11 @@
 @use 'primeicons/primeicons.css';
 @use './doc.scss';
 
-body {
+body.dark {
   background-color: var(--p-surface-950);
+}
+body {
+  background-color: var(--p-surface-50);
 }
 
 :root {
