@@ -142,6 +142,10 @@ export default defineNuxtConfig({
             collections: ['fluent']
         }
     },
+    colorMode: {
+        preference: "system",
+        fallback: "dark"
+    },
     content: {
       build: {
         markdown: {

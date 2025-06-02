@@ -1,13 +1,13 @@
 @use 'primeicons/primeicons.css';
 @use './doc.scss';
 
-.dark-mode {
+.light-mode {
   body {
-    background-color: var(--p-surface-950);
+    background-color: var(--p-surface-50);
   }
 }
 body {
-  background-color: var(--p-surface-50);
+  background-color: var(--p-surface-950);
 }
 
 :root {
