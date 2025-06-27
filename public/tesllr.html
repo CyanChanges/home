@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自从 lovemilk233 上次理我已经过了</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans CJK SC', 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-purple-200 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 rounded-xl shadow-2xl max-w-md w-full text-center transform transition-all duration-300 hover:scale-105">
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-6 tracking-tight">lovemilk233 已经有多久没理我了</h1>
+        <p class="text-lg text-gray-600 mb-8">自 <span class="font-semibold text-blue-600">January 15, 2025, 10:27 PM (UTC+8)</span> 到现在</p>
+
+        <div class="space-y-4 mb-8">
+            <div class="bg-blue-50 p-4 rounded-lg shadow-inner">
+                <p class="text-sm text-gray-500">月</p>
+                <p id="months" class="text-5xl font-bold text-blue-700 animate-pulse">0</p>
+            </div>
+            <div class="bg-green-50 p-4 rounded-lg shadow-inner">
+                <p class="text-sm text-gray-500">分钟</p>
+                <p id="minutes" class="text-5xl font-bold text-blue-700 animate-pulse">0</p>
+            </div>
+            <div class="bg-purple-50 p-4 rounded-lg shadow-inner">
+                <p class="text-sm text-gray-500">秒</p>
+                <p id="seconds" class="text-5xl font-bold text-blue-700 animate-pulse">0</p>
+            </div>
+        </div>
+
+        <button id="updateButton" class="bg-blue font-bold py-3 px-6 rounded-full shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300">
+          手动刷新
+        </button>
+    </div>
+
+    <script>
+        const since = new Date('2025-01-15T22:27:00+08:00');
+
+        const monthsEl = document.getElementById('months');
+        const minutesEl = document.getElementById('minutes');
+        const secondsEl = document.getElementById('seconds');
+        const updateEl = document.getElementById('updateButton');
+
+        function update() {
+            const now = new Date();
+            const miliseconds = now.getTime() - since.getTime();
+
+            const seconds = Math.floor(miliseconds / 1000);
+
+            const minutes = Math.floor(seconds / 60);
+
+            const days = miliseconds / (1000 * 60 * 60 * 24);
+            const months = Math.floor(days / 30.44);
+
+            monthsEl.textContent = months.toLocaleString();
+            minutesEl.textContent = minutes.toLocaleString();
+            secondsEl.textContent = seconds.toLocaleString();
+        }
+        update();
+        setInterval(update, 1000);
+
+        updateEl.addEventListener('click', update);
+    </script>
+</body>
+</html>
