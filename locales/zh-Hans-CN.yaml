@@ -1,0 +1,21 @@
+homePage: Home
+blogPage: Blog
+on: 启用
+off: 禁用
+yes: 是
+no: 否
+done: 完成
+privacy-policy: 隐私协议
+options: 选项
+
+actions:
+  go-home: 返回主页
+  go-back: 返回历史
+
+messages:
+  content-not-found: 内容不存在
+  content-page:
+    not-found: 您访问的内容不存在
+
+titles:
+  not-found: 连接已断开
