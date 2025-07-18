@@ -39,15 +39,15 @@ https://www.youtube.com/watch?v=YOM-ISLXllw
 
 https://canary.discord.com/channels/757313446730793101/1286016254217289789/1286016297917878325
 
-Twitter: https://twitter.com/TokyoHackerGrls
-Mastodon:https://vt.social/@TokyoHackerGirls
-Youtube: https://www.youtube.com/@TokyoHackerGirls
+Twitter: https://twitter.com/TokyoHackerGrls  
+Mastodon:https://vt.social/@TokyoHackerGirls  
+Youtube: https://www.youtube.com/@TokyoHackerGirls  
 
-Cyan's Twitter: https://cyannyan.com/twitter
-Cyan's Mastodon: https://vt.social/@cyan
-Cyan's Github: https://cyannyan.com/github
-Cyan's Youtube channel: https://cyannyan.com/youtube
-Cyan's Twitch channel: https://cyannyan.com/twitch
-Lina's Twitter: https://twitter.com/LinaAsahi
-Lina's Mastodon: https://vt.social/@lina
-Lina's Github: https://github.com/asahilina
+Cyan's Twitter: https://cyannyan.com/twitter  
+Cyan's Mastodon: https://vt.social/@cyan  
+Cyan's Github: https://cyannyan.com/github  
+Cyan's Youtube channel: https://cyannyan.com/youtube  
+Cyan's Twitch channel: https://cyannyan.com/twitch  
+Lina's Twitter: https://twitter.com/LinaAsahi  
+Lina's Mastodon: https://vt.social/@lina  
+Lina's Github: https://github.com/asahilina  
