@@ -7,6 +7,8 @@ updateDate: 2025-07-19T02:13:11.00+09:00
 
 **我竟然和别人重名了? 而且对方还是一个 VTuber, 还使用简体中文!?**
 
+https://www.youtube.com/watch?v=YOM-ISLXllw
+
 ## What happened
 
 (以下文言文纯属瞎编, 我不会写喵
