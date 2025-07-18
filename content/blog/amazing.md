@@ -34,3 +34,20 @@ https://www.youtube.com/watch?v=YOM-ISLXllw
 并载明所本
 
 <img width="1330" height="328" alt="image" src="https://github.com/user-attachments/assets/231c0b5a-5667-41f6-8ec9-6a1219c1d7fe" />
+
+## 引用
+
+https://canary.discord.com/channels/757313446730793101/1286016254217289789/1286016297917878325
+
+Twitter: https://twitter.com/TokyoHackerGrls
+Mastodon:https://vt.social/@TokyoHackerGirls
+Youtube: https://www.youtube.com/@TokyoHackerGirls
+
+Cyan's Twitter: https://cyannyan.com/twitter
+Cyan's Mastodon: https://vt.social/@cyan
+Cyan's Github: https://cyannyan.com/github
+Cyan's Youtube channel: https://cyannyan.com/youtube
+Cyan's Twitch channel: https://cyannyan.com/twitch
+Lina's Twitter: https://twitter.com/LinaAsahi
+Lina's Mastodon: https://vt.social/@lina
+Lina's Github: https://github.com/asahilina
