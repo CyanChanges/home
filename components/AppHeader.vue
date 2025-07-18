@@ -63,25 +63,6 @@ if (import.meta.client) {
 <template>
   <header>
     <NuxtRouteAnnouncer/>
-    <Message severity="danger" :closable="closable">
-      <p>ARE YOU S!T!U!P!I!D! send me an E!-Mail about the CaSiNo? What the hail? I'll wish you a speedy ascension.</p>
-      <p>Anyone get mouse-brained who sends me casino-related emails, I wish you a speedy ascension.</p>
-      <p>給我發賭場相關郵件的, 冇腦噶, 我祝你早日昇天噶</p>
-      <p>畀我發賭場相關郵件嘅，我祝你早日升天</p>
-      <p>カジノ関連のメールを送ってくれた皆さん、早く昇進することを祈っています~💢</p>
-      <p>카지노 관련 이메일을 보내주신 분들께 빠른 승천을 기원합니다.</p>
-      <p>A coloro che mi hanno inviato e-mail relative ai casinò, auguro una rapida ascesa</p>
-      <p>Gửi đến những ai đã gửi cho tôi email liên quan đến sòng bạc, tôi chúc các bạn thăng tiến nhanh chóng</p>
-      <p>Όποιος μου στέλνει μηνύματα ηλεκτρονικού ταχυδρομείου σχετικά με το καζίνο, σας εύχομαι ταχεία άνοδο.</p>
-
-      <h3>谁给赌场发邮件抄送我, 我胸都给你打穿模</h3>
-
-      <b>Translated by <a href="https://www.deepl.com/">DeepL</a></b>
-      <br />
-      <b><sub>Closable only after 5 seconds</sub></b>
-
-    </Message>
-
     <Menubar :model="items" class="menubar">
       <template #item="{ item, props, hasSubmenu, root }">
         <NuxtLink prefetch v-ripple v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
