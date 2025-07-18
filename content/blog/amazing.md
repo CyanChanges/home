@@ -40,7 +40,7 @@ https://www.youtube.com/watch?v=YOM-ISLXllw
 https://canary.discord.com/channels/757313446730793101/1286016254217289789/1286016297917878325
 
 Twitter: https://twitter.com/TokyoHackerGrls  
-Mastodon:https://vt.social/@TokyoHackerGirls  
+Mastodon: https://vt.social/@TokyoHackerGirls  
 Youtube: https://www.youtube.com/@TokyoHackerGirls  
 
 Cyan's Twitter: https://cyannyan.com/twitter  
