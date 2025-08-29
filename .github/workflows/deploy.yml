@@ -1,0 +1,87 @@
+# https://github.com/actions/deploy-pages#usage
+name: Deploy to GitHub Pages
+on:
+  workflow_run:
+    workflows:
+      - Sync
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: deploy
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - name: Restore Blackhole
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            node_modules
+          key: blackhole
+      # Pick your own package manager and build script
+      - run: bun install --locked
+      - name: Save Blackhole
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            node_modules
+          key: blackhole
+      - run: bun run generate
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: dist
+  # Deployment job
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      contents: write   # to deploy to gh_pages branch
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    # Deploy to the github_pages environment
+    environment:
+      name: github_pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-output
+          path: dist
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          # Automatically inject router.base in your Nuxt configuration file and set
+          # target to static (https://nuxtjs.org/docs/configuration-glossary/configuration-target/).
+          #
+          # You may remove this line if you want to manage the configuration yourself.
+          static_site_generator: nuxt
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+      - uses: actions/deploy-pages@v4
+        name: Deploy to GitHub Pages
+        id: deployment
+      - name: Save to gh_pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: gh_pages
+          # https://github.com/peaceiris/actions-gh-pages/issues/163
+          exclude_assets: ''
+          force_orphan: true
+          commit_message: 'deploy'

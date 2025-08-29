@@ -1,0 +1,36 @@
+@use 'primeicons/primeicons.css';
+@use './doc.scss';
+
+.light-mode {
+  body {
+    background-color: var(--p-surface-50);
+  }
+}
+body {
+  background-color: var(--p-surface-950);
+}
+
+:root {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+
+:root[lang^="en"] {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+
+:root[lang^="zh-TW"], :root[lang^="zh-Hant"] {
+  font-family: "Noto Sans", "Noto Sans TC", sans-serif;
+  font-weight: 500;
+}
+
+:root[lang^="zh-CN"], :root[lang^="zh-Hans"] {
+  font-family: "Noto Sans", "Noto Sans CJK SC", sans-serif;
+  font-weight: 500;
+}
+
+:root[lang^="ja"] {
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+  font-weight: 500;
+}
