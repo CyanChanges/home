@@ -13,7 +13,7 @@ const { major, minor, commit } = useVersion()
         <a rel="me" v-tooltip="'contact@cyans.me'" href="mailto:contact@cyans.me">E-Mail</a> |
         <a rel="me" v-tooltip="'CyanChanges'" href="https://github.com/CyanChanges">GitHub</a> |
         <a rel="me" v-tooltip="'@cyanc:matrix.org'" href="https://matrix.to/@cyanc:matrix.org#/@cyanc:matrix.org">Matrix</a> |
-        <a rel="me" v-tooltip="'Reach me on my Discord Server!'" type="text" href="https://discord.gg/hwUPMz3uBE">Discord</a> |
+        <a rel="me" v-tooltip="'Reach me on my Discord Server!'" type="text" href="https://discord.gg/UpJgkaky">Discord</a> |
         <a rel="me" v-tooltip="'CyanChanges@mastodon.social'" href="https://mastodon.social/@CyanChanges">Mastodon</a> |
         <a rel="external" v-tooltip="'ID: 298526251'" href="https://www.hoyolab.com/accountCenter/postList?id=298526251"
            class="color-dark-3"><del>HoYoLab</del></a>
