@@ -1,0 +1,1 @@
+const n={content:"8FB9mm5FyK"},t={content:"_content_content",info:"_content_info"},s={content:{fields:{id:"string",stem:"string",extension:"string",meta:"json",path:"string",title:"string",description:"string",seo:"json",body:"json",navigation:"json"}},info:{fields:{}}};export{s as a,n as c,t};
